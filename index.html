@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEQUEÑAAAAAAA</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body onclick="PlayAudio()"> <!-- Mueve el evento onclick al body -->
+
+    <!-- Contenido de la página -->
+    <div class="container">
+        <button onclick="mostrarMensaje1()">Presionameee</button> 
+        <button onclick="mostrarMensaje2()">Presiona este también</button>
+        <button onclick="mostrarMensaje3()">No se te olvide presionar tampoco este</button>
+    </div>
+
+    <!-- Reproductor de audio -->
+    <audio id="musica1" autoplay loop>
+        <source src="seven.ogg" type="audio/ogg">
+    </audio>
+
+    <!-- Cuadro de texto flotante -->
+    <div id="cuadroTexto" class="cuadro-flotante">
+        <p>Presiona una flor y mira la magiaaa</p>
+        <button onclick="cerrarCuadroTexto()">Cerrar</button>
+    </div>
+   
+    <script>
+        function PlayAudio() {
+            document.getElementById("musica1").play();
+        }
+        
+        function mostrarMensaje1() {
+            var mensaje = "Montsesitaaaaaa holi, aprendí a hacer una página solo por ti xd, para decirte que alomejor tu esperabas tus flores amarillas:((( pero sé que no puedo ir tan rápido, no puedo apresurarme a hacer todo tan rápido:(, sé que debo ser paciente y eso:(( así que espero comprendas, de igual manera te mando este pequeño detalle, que aunque alomejor parezca sencillo créeme que me costó toda la noche hacerlo porque no tengo ni idea de cómo hacer una página JAJAJA, tkm <3 ";
+            alert(mensaje);
+        }
+        
+        function mostrarMensaje2() {
+            var mensaje = "También quería decirte que le eches muuuuuchas ganas hoy para el examen de mañanaaa, sé que no ocupo decirlo porque eres sensacional!!! me encanta como eres y estoy muuuuuy pero muuuuuuy orgulloso de ti, de todo lo que has hechooooo y quiero que sepas que en serio estoy muy agradecido de tenerte en mi vida <3, hay taaantas cosas que quisiera poder decirte o expresarte pero creo que las palabras no me bastan DDDDD: (tengo que improvisar las caritas JAJAJAJA sorrrry), por último para no extenderme más espero verte pronto:DDDDD te extrañoooooo:((((( y deseo verte ya:(((, también trato de calmarme porque no quiero fastidiarte o así:(((, bueeeno alomejor la noche me hace escribir de más y ser más sincero JAJAJA yyyyy bueno dependiendo de si te gusta esto, veo si logro mejorar mis dotes de programador para la siguiente hacerlo mas dinámico JAJAJAJA";
+            alert(mensaje);
+        }
+        
+        function mostrarMensaje3() {
+            var mensaje = "Pooooor cierto si no quedo muy claro si te iba a mandar tus floresitas peeero tampoco quiero meterte presion o asi por parte de tu familia xd tons decidi mejor hacer estoooo peeero ganas no me faltaron o de al menos ir a verte peeeero se que mañana presentas materiales y es una materia muuuy complicada, que mejor yo para saber el nivel de dificultad de lo que se trata, no quiero quitarte tiempo o asi, TKM ";
+            alert(mensaje);
+        }
+
+        function cerrarCuadroTexto() {
+            var cuadroTexto = document.getElementById("cuadroTexto");
+            cuadroTexto.style.display = "none";
+        }
+    </script>
+</body>
+</html>
